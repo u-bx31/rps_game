@@ -1,0 +1,44 @@
+@use '../abstract/colors' as *;
+
+.c_headr{
+    border: 3px solid $Header-Outline;
+    border-radius: 10px;
+    &_logo{
+        img{
+            height: 3rem;
+        }
+    }
+    &_score{
+        width: fit-content;
+        &_text{
+            font-weight: 600;
+            color: $Score-Text;
+            height: 10px;
+            width: 50px;
+        }
+        &_number{
+            font-size: 2rem;
+            color: $Dark-Text;
+            
+        }
+    }
+
+    @media (min-width: 1366px) {
+        &_logo{
+            img{
+                height: 5rem;
+            }
+        }
+        &_score{
+            &_text{
+                font-weight: 600;
+                height: 9px;
+                width: 80px;
+            }
+            &_number{
+                font-size: 4rem;
+            }
+        }
+    
+      }
+}

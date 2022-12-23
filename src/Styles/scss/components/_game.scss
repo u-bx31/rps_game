@@ -1,0 +1,105 @@
+@use "../abstract/colors" as *;
+.c-game {
+  p {
+    font-size: 1rem;
+  }
+  &_card,
+  &_empty {
+    width: 110px;
+    height: 120px;
+    &_item {
+      border: 15px solid;
+      border-radius: 50%;
+      background-color: white;
+      width: 110px;
+      img {
+        height: 50px;
+      }
+    }
+  }
+  &_empty {
+    background-color: hsl(214, 47%, 23%);
+    border-radius: 50%;
+    width: 110px;
+    height: 120px;
+  }
+  &_Result {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  .c-win {
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+  }
+  .bot-win {
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+  }
+
+  .c-rock {
+    &_border {
+      border-color: $Rock-Gradient;
+    }
+  }
+  .c-paper {
+    &_border {
+      border-color: $Paper-Gradient;
+    }
+  }
+  .c-scissor {
+    &_border {
+      border-color: $Scissors-Gradient;
+    }
+  }
+
+  @media (min-width: 375px) {
+    p {
+      font-size: 1.4rem;
+    }
+    &_card {
+      width: 180px;
+      height: 180px;
+      &_item {
+        width: 180px;
+        margin: 0 auto;
+        img {
+          height: 60px;
+        }
+      }
+    }
+    &_empty {
+      width: 180px;
+      height: 180px;
+    }
+    &_Result {
+      h3 {
+        font-size: 2.6rem;
+      }
+    }
+  }
+  @media (min-width: 1366px) {
+    p {
+      font-size: 1.8rem;
+    }
+    &_card {
+      width: 230px;
+      height: 230px;
+      &_item {
+        
+        width: 230px;
+        margin: 0 auto;
+        img {
+          height: 90px;
+        }
+      }
+    }
+    &_empty {
+      width: 230px;
+      height: 230px;
+    }
+    &_Result {
+      h3 {
+        font-size: 3rem;
+      }
+    }
+  }
+}

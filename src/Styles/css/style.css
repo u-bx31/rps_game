@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: radial-gradient(circle, hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%)) fixed no-repeat;
+  text-align: center;
+  min-width: 280px;
+}
+
+.c_headr {
+  border: 3px solid hsl(217deg, 16%, 45%);
+  border-radius: 10px;
+}
+.c_headr_logo img {
+  height: 3rem;
+}
+.c_headr_score {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.c_headr_score_text {
+  font-weight: 600;
+  color: hsl(229deg, 64%, 46%);
+  height: 10px;
+  width: 50px;
+}
+.c_headr_score_number {
+  font-size: 2rem;
+  color: hsl(229deg, 25%, 31%);
+}
+@media (min-width: 1366px) {
+  .c_headr_logo img {
+    height: 5rem;
+  }
+  .c_headr_score_text {
+    font-weight: 600;
+    height: 9px;
+    width: 80px;
+  }
+  .c_headr_score_number {
+    font-size: 4rem;
+  }
+}
+
+.c-selection {
+  background-image: url("/src/images/bg-triangle.svg");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center 70px;
+  height: 300px;
+}
+.c-selection_card {
+  width: 110px;
+  height: 120px;
+}
+.c-selection_card_item {
+  border: 15px solid;
+  border-radius: 50%;
+  background-color: white;
+  width: 110px;
+}
+.c-selection_card_item img {
+  height: 50px;
+}
+.c-selection .c-rock {
+  position: absolute;
+  transform: translateY(150px);
+}
+.c-selection .c-rock_border {
+  border-color: hsl(349deg, 71%, 52%);
+}
+.c-selection .c-paper_border {
+  border-color: hsl(230deg, 89%, 62%);
+}
+.c-selection .c-scissor_border {
+  border-color: hsl(39deg, 89%, 49%);
+}
+@media (min-width: 375px) {
+  .c-selection {
+    background-size: 270px;
+  }
+  .c-selection_card {
+    width: 160px;
+    height: 140px;
+  }
+  .c-selection_card_item {
+    width: 125px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1366px) {
+  .c-selection {
+    background-size: 350px;
+    height: 380px;
+  }
+  .c-selection_card {
+    width: 220px;
+    height: 160px;
+  }
+  .c-selection_card_item {
+    width: 150px;
+  }
+  .c-selection_card_item img {
+    height: 60px;
+  }
+  .c-selection .c-rock {
+    transform: translateY(220px);
+  }
+}
+
+.c-btn-rules {
+  width: 150px;
+}
+
+.c-dark {
+  color: hsl(229deg, 25%, 31%);
+}
+
+.c-game p {
+  font-size: 1rem;
+}
+.c-game_card, .c-game_empty {
+  width: 110px;
+  height: 120px;
+}
+.c-game_card_item, .c-game_empty_item {
+  border: 15px solid;
+  border-radius: 50%;
+  background-color: white;
+  width: 110px;
+}
+.c-game_card_item img, .c-game_empty_item img {
+  height: 50px;
+}
+.c-game_empty {
+  background-color: hsl(214deg, 47%, 23%);
+  border-radius: 50%;
+  width: 110px;
+  height: 120px;
+}
+.c-game_Result h3 {
+  font-size: 2rem;
+}
+.c-game .c-win {
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+.c-game .bot-win {
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+.c-game .c-rock_border {
+  border-color: hsl(349deg, 71%, 52%);
+}
+.c-game .c-paper_border {
+  border-color: hsl(230deg, 89%, 62%);
+}
+.c-game .c-scissor_border {
+  border-color: hsl(39deg, 89%, 49%);
+}
+@media (min-width: 375px) {
+  .c-game p {
+    font-size: 1.4rem;
+  }
+  .c-game_card {
+    width: 180px;
+    height: 180px;
+  }
+  .c-game_card_item {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .c-game_card_item img {
+    height: 60px;
+  }
+  .c-game_empty {
+    width: 180px;
+    height: 180px;
+  }
+  .c-game_Result h3 {
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 1366px) {
+  .c-game p {
+    font-size: 1.8rem;
+  }
+  .c-game_card {
+    width: 230px;
+    height: 230px;
+  }
+  .c-game_card_item {
+    width: 230px;
+    margin: 0 auto;
+  }
+  .c-game_card_item img {
+    height: 90px;
+  }
+  .c-game_empty {
+    width: 230px;
+    height: 230px;
+  }
+  .c-game_Result h3 {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

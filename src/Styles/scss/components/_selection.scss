@@ -1,0 +1,76 @@
+@use "../abstract/colors" as *;
+
+.c-selection {
+  background-image: url("/src/images/bg-triangle.svg");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center 70px;
+  height: 300px;
+  &_card {
+    width: 110px;
+    height: 120px;
+    &_item {
+      border: 15px solid;
+      border-radius: 50%;
+      background-color: white;
+
+      width: 110px;
+      img {
+        height: 50px;
+      }
+    }
+  }
+  .c-rock {
+    position: absolute;
+    transform: translateY(150px);
+    &_border {
+      border-color: $Rock-Gradient;
+    }
+  }
+  .c-paper {
+    &_border {
+      border-color: $Paper-Gradient;
+    }
+  }
+  .c-scissor {
+    &_border {
+      border-color: $Scissors-Gradient;
+    }
+  }
+
+  @media (min-width: 375px) {
+    background-size: 270px;
+    &_card {
+      width: 160px;
+      height: 140px;
+      &_item {
+        width: 125px;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (min-width: 1366px) {
+    background-size: 350px;
+    height: 380px;
+    &_card {
+      width: 220px;
+      height: 160px;
+      &_item {
+        width: 150px;
+        img {
+          height: 60px;
+        }
+      }
+    }
+    .c-rock {
+      transform: translateY(220px);
+    }
+  }
+}
+
+.c-btn-rules {
+  width: 150px;
+}
+.c-dark {
+  color: $Dark-Text;
+}

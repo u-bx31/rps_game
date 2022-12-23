@@ -1,0 +1,16 @@
+
+@use '../abstract/colors' as *;
+@use '../abstract/fonts' as *;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: $fontBarlowSemi;
+    background: $Background-Gradient fixed no-repeat;
+    text-align: center;
+    min-width: 280px;
+}
