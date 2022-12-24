@@ -23,6 +23,23 @@
         }
     }
 
+    @media (min-width: 375px) {
+        &_logo{
+            img{
+                height: 3.5rem;
+            }
+        }
+        &_score{
+            &_text{
+                height: 9px;
+                width: 80px;
+            }
+            &_number{
+                font-size: 3rem;
+            }
+        }
+    
+      }
     @media (min-width: 1366px) {
         &_logo{
             img{

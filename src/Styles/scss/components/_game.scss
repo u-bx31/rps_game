@@ -56,10 +56,10 @@
       font-size: 1.4rem;
     }
     &_card {
-      width: 180px;
-      height: 180px;
+      width: 170px;
+      height: 170px;
       &_item {
-        width: 180px;
+        width: 165px;
         margin: 0 auto;
         img {
           height: 60px;
@@ -67,8 +67,8 @@
       }
     }
     &_empty {
-      width: 180px;
-      height: 180px;
+      width: 170px;
+      height: 170px;
     }
     &_Result {
       h3 {
@@ -76,7 +76,7 @@
       }
     }
   }
-  @media (min-width: 1366px) {
+  @media (min-width: 1280px) {
     p {
       font-size: 1.8rem;
     }
@@ -84,7 +84,7 @@
       width: 230px;
       height: 230px;
       &_item {
-        
+        border: 20px solid;
         width: 230px;
         margin: 0 auto;
         img {

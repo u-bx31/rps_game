@@ -70,11 +70,11 @@ const Game = ({ playerChoice, score, setScore, pchoiseImage }) => {
             return scissor;
         }
     }
-    const winnerLoser = (state)=>{
-        if(state === 'YOU WIN'){
+    const winnerLoser = (state) => {
+        if (state === 'YOU WIN') {
             return 'c-win'
         }
-        else if(state === 'YOU LOSE'){
+        else if (state === 'YOU LOSE') {
             return 'c-lose'
         }
     }
@@ -93,7 +93,7 @@ const Game = ({ playerChoice, score, setScore, pchoiseImage }) => {
 
     return (
         <>
-            <div className="row row-cols-2 justify-content-center align-items-lg-end text-white c-game py-3 py-lg-2 w-100 mx-auto">
+            <div className="row row-cols-2 justify-content-center align-items-lg-end text-center text-white c-game py-3 py-lg-2 w-100 mx-auto">
                 <div className="col-lg-3 col">
                     <div className="d-flex flex-column-reverse flex-lg-column ">
                         <p className="pt-3 pt-lg-0 pb-0 pb-lg-3">YOU PICKED</p>
@@ -119,9 +119,11 @@ const Game = ({ playerChoice, score, setScore, pchoiseImage }) => {
                     </div>
 
                 </div>
-                <div className="col-lg-3 col order-lg-2 my-lg-0 my-3 align-items-end">
-                    {Result(computer !== '')}
-                </div>
+                {computer !== '' &&
+                    <div className="col-lg-3 col order-lg-2 my-lg-0 my-3 align-items-end">
+                        {Result(computer !== '')}
+                    </div>
+                }
 
             </div>
         </>

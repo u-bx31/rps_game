@@ -34,6 +34,18 @@ body {
   font-size: 2rem;
   color: hsl(229deg, 25%, 31%);
 }
+@media (min-width: 375px) {
+  .c_headr_logo img {
+    height: 3.5rem;
+  }
+  .c_headr_score_text {
+    height: 9px;
+    width: 80px;
+  }
+  .c_headr_score_number {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 1366px) {
   .c_headr_logo img {
     height: 5rem;
@@ -70,7 +82,7 @@ body {
 }
 .c-selection .c-rock {
   position: absolute;
-  transform: translateY(150px);
+  transform: translateY(150px) translateX(-12px);
 }
 .c-selection .c-rock_border {
   border-color: hsl(349deg, 71%, 52%);
@@ -84,27 +96,29 @@ body {
 @media (min-width: 375px) {
   .c-selection {
     background-size: 270px;
+    height: 340px;
   }
   .c-selection_card {
-    width: 160px;
-    height: 140px;
+    width: 190px;
+    height: 150px;
   }
   .c-selection_card_item {
-    width: 125px;
+    width: 140px;
     margin: 0 auto;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 1280px) {
   .c-selection {
-    background-size: 350px;
+    background-size: 400px;
     height: 380px;
   }
   .c-selection_card {
-    width: 220px;
-    height: 160px;
+    width: 300px;
+    height: 220px;
   }
   .c-selection_card_item {
-    width: 150px;
+    border: 20px solid;
+    width: 220px;
   }
   .c-selection_card_item img {
     height: 60px;
@@ -167,25 +181,25 @@ body {
     font-size: 1.4rem;
   }
   .c-game_card {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
   }
   .c-game_card_item {
-    width: 180px;
+    width: 165px;
     margin: 0 auto;
   }
   .c-game_card_item img {
     height: 60px;
   }
   .c-game_empty {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
   }
   .c-game_Result h3 {
     font-size: 2.6rem;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 1280px) {
   .c-game p {
     font-size: 1.8rem;
   }
@@ -194,6 +208,7 @@ body {
     height: 230px;
   }
   .c-game_card_item {
+    border: 20px solid;
     width: 230px;
     margin: 0 auto;
   }

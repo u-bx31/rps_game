@@ -12,7 +12,7 @@ const Selection = ({ setPlayerChoice,setPchoiseImage }) => {
         setPchoiseImage(e.target.src)
     }
     return (
-        <div className="my-5">
+        <div className="my-lg-3 my-5">
             <div className="d-flex justify-content-center c-selection py-4">
                 <div className="c-selection_card c-paper mx-3">
                     <Link to={'/game'}>

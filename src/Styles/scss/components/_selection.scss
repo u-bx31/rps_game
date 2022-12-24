@@ -22,7 +22,7 @@
   }
   .c-rock {
     position: absolute;
-    transform: translateY(150px);
+    transform: translateY(150px) translateX(-12px);
     &_border {
       border-color: $Rock-Gradient;
     }
@@ -40,23 +40,25 @@
 
   @media (min-width: 375px) {
     background-size: 270px;
+    height: 340px;
     &_card {
-      width: 160px;
-      height: 140px;
+      width: 190px;
+      height: 150px;
       &_item {
-        width: 125px;
+        width: 140px;
         margin: 0 auto;
       }
     }
   }
-  @media (min-width: 1366px) {
-    background-size: 350px;
+  @media (min-width: 1280px) {
+    background-size: 400px;
     height: 380px;
     &_card {
-      width: 220px;
-      height: 160px;
+      width: 300px;
+      height: 220px;
       &_item {
-        width: 150px;
+        border: 20px solid;
+        width: 220px;
         img {
           height: 60px;
         }
